@@ -28,6 +28,10 @@ protocol ScreenDataProtocol {
     var labelState: LabelState { get set }
 }
 
+protocol ScreenViewControllerDelegate: class {
+    func openRxSwiftButtonPressed()
+}
+
 class ScreenViewController: UIViewController, StoryboardInstantiable {
 
     @IBOutlet weak var outputLabel: UILabel!
@@ -39,7 +43,12 @@ class ScreenViewController: UIViewController, StoryboardInstantiable {
         viewModel?.inputs.secondButtonPressed()
     }
 
+    @IBAction func openRxSwiftButtonAction(_ sender: Any) {
+        delegate?.openRxSwiftButtonPressed()
+    }
+
     var viewModel: ScreenViewModelProtocol?
+    weak var delegate: ScreenViewControllerDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()

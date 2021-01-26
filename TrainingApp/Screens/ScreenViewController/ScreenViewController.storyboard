@@ -38,6 +38,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5W-e0-CaB">
+                                <rect key="frame" x="115.5" y="430" width="183" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Open RxSwift screen"/>
+                                <connections>
+                                    <action selector="openRxSwiftButtonAction:" destination="ddg-Ro-HjV" eventType="touchUpInside" id="hKm-kP-nRz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UEt-Uh-hcR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -46,8 +54,10 @@
                             <constraint firstItem="l8b-y6-sKT" firstAttribute="leading" secondItem="UEt-Uh-hcR" secondAttribute="leading" constant="8" id="G0n-kv-m0k"/>
                             <constraint firstItem="Yxo-0V-3SM" firstAttribute="leading" secondItem="jaq-Ir-4JR" secondAttribute="trailing" constant="8" id="PVp-Qd-bRr"/>
                             <constraint firstItem="Yxo-0V-3SM" firstAttribute="centerY" secondItem="jaq-Ir-4JR" secondAttribute="centerY" id="QWV-fS-H5f"/>
+                            <constraint firstItem="q5W-e0-CaB" firstAttribute="centerY" secondItem="iB8-bU-ZMJ" secondAttribute="centerY" id="S7M-xE-I3J"/>
                             <constraint firstItem="jaq-Ir-4JR" firstAttribute="leading" secondItem="UEt-Uh-hcR" secondAttribute="leading" constant="8" id="TFh-ST-mnz"/>
                             <constraint firstItem="jaq-Ir-4JR" firstAttribute="top" secondItem="l8b-y6-sKT" secondAttribute="bottom" constant="8" id="bcL-V4-vSx"/>
+                            <constraint firstItem="q5W-e0-CaB" firstAttribute="centerX" secondItem="iB8-bU-ZMJ" secondAttribute="centerX" id="uU8-xg-bhA"/>
                         </constraints>
                     </view>
                     <connections>
