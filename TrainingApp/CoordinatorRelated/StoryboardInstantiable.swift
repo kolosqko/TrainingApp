@@ -15,7 +15,8 @@ protocol StoryboardInstantiable {
 extension StoryboardInstantiable where Self: UIViewController {
 
     static func instantiateViewController(_ bundle: Bundle? = nil) -> Self {
-        let defaultFileName = NSStringFromClass(self.classForCoder())
+        // swiftlint:disable:next force_unwrapping
+        let defaultFileName = NSStringFromClass(self.classForCoder()).components(separatedBy: ".").last!
         let sb = UIStoryboard(name: defaultFileName, bundle: bundle)
         // swiftlint:disable:next force_cast
         return sb.instantiateInitialViewController() as! Self
