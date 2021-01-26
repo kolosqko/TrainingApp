@@ -1,16 +1,20 @@
 PODS:
+  - ReactiveSwift (6.5.0)
   - SwiftLint (0.42.0)
 
 DEPENDENCIES:
+  - ReactiveSwift (~> 6.1)
   - SwiftLint
 
 SPEC REPOS:
   trunk:
+    - ReactiveSwift
     - SwiftLint
 
 SPEC CHECKSUMS:
+  ReactiveSwift: 8d159904084e908856cde90b2e28823f3c7e485f
   SwiftLint: 4fa9579c63416865179bc416f0a92d55f009600d
 
-PODFILE CHECKSUM: 071370a3f609a684d918214cc3aefff8407c45e7
+PODFILE CHECKSUM: 649c5f93388269e5a98ee7daedafd20962aad2f3
 
 COCOAPODS: 1.10.1
