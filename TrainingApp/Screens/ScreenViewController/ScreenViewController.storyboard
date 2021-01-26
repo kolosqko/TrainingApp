@@ -16,17 +16,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8b-y6-sKT">
-                                <rect key="frame" x="178" y="430" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yxo-0V-3SM">
+                                <rect key="frame" x="58" y="92.5" width="73" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Second"/>
+                                <connections>
+                                    <action selector="secondButtonAction:" destination="ddg-Ro-HjV" eventType="touchUpInside" id="Jnr-8V-gQM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaq-Ir-4JR">
+                                <rect key="frame" x="8" y="92.5" width="42" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="First"/>
+                                <connections>
+                                    <action selector="firstButtonAction:" destination="ddg-Ro-HjV" eventType="touchUpInside" id="9Hj-6e-PYp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8b-y6-sKT">
+                                <rect key="frame" x="8" y="52" width="64" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UEt-Uh-hcR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="l8b-y6-sKT" firstAttribute="top" secondItem="UEt-Uh-hcR" secondAttribute="top" constant="8" id="4Ry-xh-KN0"/>
+                            <constraint firstItem="l8b-y6-sKT" firstAttribute="leading" secondItem="UEt-Uh-hcR" secondAttribute="leading" constant="8" id="G0n-kv-m0k"/>
+                            <constraint firstItem="Yxo-0V-3SM" firstAttribute="leading" secondItem="jaq-Ir-4JR" secondAttribute="trailing" constant="8" id="PVp-Qd-bRr"/>
+                            <constraint firstItem="Yxo-0V-3SM" firstAttribute="centerY" secondItem="jaq-Ir-4JR" secondAttribute="centerY" id="QWV-fS-H5f"/>
+                            <constraint firstItem="jaq-Ir-4JR" firstAttribute="leading" secondItem="UEt-Uh-hcR" secondAttribute="leading" constant="8" id="TFh-ST-mnz"/>
+                            <constraint firstItem="jaq-Ir-4JR" firstAttribute="top" secondItem="l8b-y6-sKT" secondAttribute="bottom" constant="8" id="bcL-V4-vSx"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="outputLabel" destination="l8b-y6-sKT" id="dc7-lX-f5c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HoP-dC-1o8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

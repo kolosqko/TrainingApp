@@ -18,8 +18,11 @@ class ScreenCoordinator: Coordinator {
     }
 
     func start() {
+        let viewModel = ScreenViewModel()
         let screenViewController: ScreenViewController = ScreenViewController.instantiateViewController()
         presenter.pushViewController(screenViewController, animated: true)
+        screenViewController.viewModel = viewModel
+        screenViewController.bindViewModel()
         self.screenViewController = screenViewController
     }
 }

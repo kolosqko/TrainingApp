@@ -15,6 +15,8 @@
 		EA52191925C035F800EF36F1 /* ScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA52191825C035F800EF36F1 /* ScreenViewController.swift */; };
 		EA52191E25C043B700EF36F1 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA52191D25C043B700EF36F1 /* SceneCoordinator.swift */; };
 		EA52192325C044FD00EF36F1 /* ScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA52192225C044FD00EF36F1 /* ScreenCoordinator.swift */; };
+		EA52192825C04DD200EF36F1 /* ScreenVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA52192725C04DD200EF36F1 /* ScreenVIewModel.swift */; };
+		EA52192D25C04DE000EF36F1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA52192C25C04DE000EF36F1 /* ViewModel.swift */; };
 		EAD8206A25C012C50062C7BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD8206925C012C50062C7BF /* AppDelegate.swift */; };
 		EAD8206C25C012C50062C7BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD8206B25C012C50062C7BF /* SceneDelegate.swift */; };
 		EAD8206E25C012C50062C7BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD8206D25C012C50062C7BF /* ViewController.swift */; };
@@ -57,6 +59,8 @@
 		EA52191825C035F800EF36F1 /* ScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenViewController.swift; sourceTree = "<group>"; };
 		EA52191D25C043B700EF36F1 /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
 		EA52192225C044FD00EF36F1 /* ScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenCoordinator.swift; sourceTree = "<group>"; };
+		EA52192725C04DD200EF36F1 /* ScreenVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenVIewModel.swift; sourceTree = "<group>"; };
+		EA52192C25C04DE000EF36F1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		EAD8206625C012C50062C7BF /* TrainingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD8206925C012C50062C7BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAD8206B25C012C50062C7BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -230,6 +234,8 @@
 		EAD820AC25C016D80062C7BF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EA52192725C04DD200EF36F1 /* ScreenVIewModel.swift */,
+				EA52192C25C04DE000EF36F1 /* ViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -455,7 +461,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA52192D25C04DE000EF36F1 /* ViewModel.swift in Sources */,
 				EAD820AE25C0173E0062C7BF /* Coordinator.swift in Sources */,
+				EA52192825C04DD200EF36F1 /* ScreenVIewModel.swift in Sources */,
 				EAD8206E25C012C50062C7BF /* ViewController.swift in Sources */,
 				EA52191925C035F800EF36F1 /* ScreenViewController.swift in Sources */,
 				EA52190E25C02CF600EF36F1 /* StoryboardInstantiable.swift in Sources */,
