@@ -10,6 +10,11 @@
 		03928B8D5749995EAF55FC5F /* Pods_TrainingAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0DBEF31DD0BC32CAF5D7F1 /* Pods_TrainingAppTests.framework */; };
 		245696225ACC2B3BD18DFC6C /* Pods_TrainingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABE73748C4CC6937EA64AAC /* Pods_TrainingApp.framework */; };
 		CE63CDD2397556E635B3D4EA /* Pods_TrainingApp_TrainingAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F3058F5C305CA41BA45538 /* Pods_TrainingApp_TrainingAppUITests.framework */; };
+		EA52190E25C02CF600EF36F1 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA52190D25C02CF600EF36F1 /* StoryboardInstantiable.swift */; };
+		EA52191425C035D500EF36F1 /* ScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA52191325C035D500EF36F1 /* ScreenViewController.storyboard */; };
+		EA52191925C035F800EF36F1 /* ScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA52191825C035F800EF36F1 /* ScreenViewController.swift */; };
+		EA52191E25C043B700EF36F1 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA52191D25C043B700EF36F1 /* SceneCoordinator.swift */; };
+		EA52192325C044FD00EF36F1 /* ScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA52192225C044FD00EF36F1 /* ScreenCoordinator.swift */; };
 		EAD8206A25C012C50062C7BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD8206925C012C50062C7BF /* AppDelegate.swift */; };
 		EAD8206C25C012C50062C7BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD8206B25C012C50062C7BF /* SceneDelegate.swift */; };
 		EAD8206E25C012C50062C7BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD8206D25C012C50062C7BF /* ViewController.swift */; };
@@ -47,6 +52,11 @@
 		80F3058F5C305CA41BA45538 /* Pods_TrainingApp_TrainingAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainingApp_TrainingAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFD9CB064E93BD811AC9D855 /* Pods-TrainingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainingApp.debug.xcconfig"; path = "Target Support Files/Pods-TrainingApp/Pods-TrainingApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E32388828B5A28F7B16D7B30 /* Pods-TrainingApp-TrainingAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainingApp-TrainingAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-TrainingApp-TrainingAppUITests/Pods-TrainingApp-TrainingAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EA52190D25C02CF600EF36F1 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		EA52191325C035D500EF36F1 /* ScreenViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScreenViewController.storyboard; sourceTree = "<group>"; };
+		EA52191825C035F800EF36F1 /* ScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenViewController.swift; sourceTree = "<group>"; };
+		EA52191D25C043B700EF36F1 /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
+		EA52192225C044FD00EF36F1 /* ScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenCoordinator.swift; sourceTree = "<group>"; };
 		EAD8206625C012C50062C7BF /* TrainingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD8206925C012C50062C7BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAD8206B25C012C50062C7BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +126,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		EA52191225C035AF00EF36F1 /* ScreenViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EA52191325C035D500EF36F1 /* ScreenViewController.storyboard */,
+				EA52191825C035F800EF36F1 /* ScreenViewController.swift */,
+				EA52192225C044FD00EF36F1 /* ScreenCoordinator.swift */,
+			);
+			path = ScreenViewController;
+			sourceTree = "<group>";
+		};
 		EAD8205D25C012C40062C7BF = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +197,7 @@
 				EAD8207725C012C60062C7BF /* Info.plist */,
 				EAD8206B25C012C50062C7BF /* SceneDelegate.swift */,
 				EAD8206925C012C50062C7BF /* AppDelegate.swift */,
+				EA52191D25C043B700EF36F1 /* SceneCoordinator.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -192,6 +213,7 @@
 		EAD820AA25C016B90062C7BF /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				EA52191225C035AF00EF36F1 /* ScreenViewController */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -200,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				EAD820AD25C0173E0062C7BF /* Coordinator.swift */,
+				EA52190D25C02CF600EF36F1 /* StoryboardInstantiable.swift */,
 			);
 			path = CoordinatorRelated;
 			sourceTree = "<group>";
@@ -319,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAD8207625C012C60062C7BF /* LaunchScreen.storyboard in Resources */,
+				EA52191425C035D500EF36F1 /* ScreenViewController.storyboard in Resources */,
 				EAD8207325C012C60062C7BF /* Assets.xcassets in Resources */,
 				EAD8207125C012C50062C7BF /* Main.storyboard in Resources */,
 			);
@@ -433,7 +457,11 @@
 			files = (
 				EAD820AE25C0173E0062C7BF /* Coordinator.swift in Sources */,
 				EAD8206E25C012C50062C7BF /* ViewController.swift in Sources */,
+				EA52191925C035F800EF36F1 /* ScreenViewController.swift in Sources */,
+				EA52190E25C02CF600EF36F1 /* StoryboardInstantiable.swift in Sources */,
 				EAD8206A25C012C50062C7BF /* AppDelegate.swift in Sources */,
+				EA52191E25C043B700EF36F1 /* SceneCoordinator.swift in Sources */,
+				EA52192325C044FD00EF36F1 /* ScreenCoordinator.swift in Sources */,
 				EAD8206C25C012C50062C7BF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
