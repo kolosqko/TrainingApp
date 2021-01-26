@@ -10,6 +10,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    var sceneCoordinator: SceneCoordinator?
 
     func scene(_ scene: UIScene,
                willConnectTo session: UISceneSession,
@@ -21,11 +22,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-        let screenViewController: ScreenViewController = ScreenViewController.instantiateViewController()
-        let navigationController: UINavigationController = UINavigationController()
-        window.rootViewController = navigationController
-        window.makeKeyAndVisible()
-        navigationController.pushViewController(screenViewController, animated: true)
+        let sceneCoordinator = SceneCoordinator(window: window)
+        sceneCoordinator.start()
+        self.sceneCoordinator = sceneCoordinator
         self.window = window
     }
 

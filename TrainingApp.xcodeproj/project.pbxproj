@@ -13,6 +13,8 @@
 		EA52190E25C02CF600EF36F1 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA52190D25C02CF600EF36F1 /* StoryboardInstantiable.swift */; };
 		EA52191425C035D500EF36F1 /* ScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA52191325C035D500EF36F1 /* ScreenViewController.storyboard */; };
 		EA52191925C035F800EF36F1 /* ScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA52191825C035F800EF36F1 /* ScreenViewController.swift */; };
+		EA52191E25C043B700EF36F1 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA52191D25C043B700EF36F1 /* SceneCoordinator.swift */; };
+		EA52192325C044FD00EF36F1 /* ScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA52192225C044FD00EF36F1 /* ScreenCoordinator.swift */; };
 		EAD8206A25C012C50062C7BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD8206925C012C50062C7BF /* AppDelegate.swift */; };
 		EAD8206C25C012C50062C7BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD8206B25C012C50062C7BF /* SceneDelegate.swift */; };
 		EAD8206E25C012C50062C7BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD8206D25C012C50062C7BF /* ViewController.swift */; };
@@ -53,6 +55,8 @@
 		EA52190D25C02CF600EF36F1 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
 		EA52191325C035D500EF36F1 /* ScreenViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScreenViewController.storyboard; sourceTree = "<group>"; };
 		EA52191825C035F800EF36F1 /* ScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenViewController.swift; sourceTree = "<group>"; };
+		EA52191D25C043B700EF36F1 /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
+		EA52192225C044FD00EF36F1 /* ScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenCoordinator.swift; sourceTree = "<group>"; };
 		EAD8206625C012C50062C7BF /* TrainingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD8206925C012C50062C7BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAD8206B25C012C50062C7BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +131,7 @@
 			children = (
 				EA52191325C035D500EF36F1 /* ScreenViewController.storyboard */,
 				EA52191825C035F800EF36F1 /* ScreenViewController.swift */,
+				EA52192225C044FD00EF36F1 /* ScreenCoordinator.swift */,
 			);
 			path = ScreenViewController;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 				EAD8207725C012C60062C7BF /* Info.plist */,
 				EAD8206B25C012C50062C7BF /* SceneDelegate.swift */,
 				EAD8206925C012C50062C7BF /* AppDelegate.swift */,
+				EA52191D25C043B700EF36F1 /* SceneCoordinator.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -454,6 +460,8 @@
 				EA52191925C035F800EF36F1 /* ScreenViewController.swift in Sources */,
 				EA52190E25C02CF600EF36F1 /* StoryboardInstantiable.swift in Sources */,
 				EAD8206A25C012C50062C7BF /* AppDelegate.swift in Sources */,
+				EA52191E25C043B700EF36F1 /* SceneCoordinator.swift in Sources */,
+				EA52192325C044FD00EF36F1 /* ScreenCoordinator.swift in Sources */,
 				EAD8206C25C012C50062C7BF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
