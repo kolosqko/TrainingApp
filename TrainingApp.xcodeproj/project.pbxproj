@@ -17,6 +17,10 @@
 		EA52192325C044FD00EF36F1 /* ScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA52192225C044FD00EF36F1 /* ScreenCoordinator.swift */; };
 		EA52192825C04DD200EF36F1 /* ScreenVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA52192725C04DD200EF36F1 /* ScreenVIewModel.swift */; };
 		EA52192D25C04DE000EF36F1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA52192C25C04DE000EF36F1 /* ViewModel.swift */; };
+		EAAC19C525C1CAEF00E3A1F4 /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAC19C425C1CAEF00E3A1F4 /* SecondScreenViewController.swift */; };
+		EAAC19CD25C1CB0D00E3A1F4 /* SecondScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAAC19CC25C1CB0D00E3A1F4 /* SecondScreenViewController.storyboard */; };
+		EAAC19D225C1CB1E00E3A1F4 /* SecondScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAC19D125C1CB1E00E3A1F4 /* SecondScreenCoordinator.swift */; };
+		EAAC19D825C1CC3800E3A1F4 /* SecondScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAC19D725C1CC3800E3A1F4 /* SecondScreenViewModel.swift */; };
 		EAD8206A25C012C50062C7BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD8206925C012C50062C7BF /* AppDelegate.swift */; };
 		EAD8206C25C012C50062C7BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD8206B25C012C50062C7BF /* SceneDelegate.swift */; };
 		EAD8206E25C012C50062C7BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD8206D25C012C50062C7BF /* ViewController.swift */; };
@@ -61,6 +65,10 @@
 		EA52192225C044FD00EF36F1 /* ScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenCoordinator.swift; sourceTree = "<group>"; };
 		EA52192725C04DD200EF36F1 /* ScreenVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenVIewModel.swift; sourceTree = "<group>"; };
 		EA52192C25C04DE000EF36F1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		EAAC19C425C1CAEF00E3A1F4 /* SecondScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenViewController.swift; sourceTree = "<group>"; };
+		EAAC19CC25C1CB0D00E3A1F4 /* SecondScreenViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondScreenViewController.storyboard; sourceTree = "<group>"; };
+		EAAC19D125C1CB1E00E3A1F4 /* SecondScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenCoordinator.swift; sourceTree = "<group>"; };
+		EAAC19D725C1CC3800E3A1F4 /* SecondScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenViewModel.swift; sourceTree = "<group>"; };
 		EAD8206625C012C50062C7BF /* TrainingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD8206925C012C50062C7BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAD8206B25C012C50062C7BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +148,24 @@
 			path = ScreenViewController;
 			sourceTree = "<group>";
 		};
+		EAAC19C325C1CACA00E3A1F4 /* SecondScreen */ = {
+			isa = PBXGroup;
+			children = (
+				EAAC19C425C1CAEF00E3A1F4 /* SecondScreenViewController.swift */,
+				EAAC19CC25C1CB0D00E3A1F4 /* SecondScreenViewController.storyboard */,
+				EAAC19D125C1CB1E00E3A1F4 /* SecondScreenCoordinator.swift */,
+			);
+			path = SecondScreen;
+			sourceTree = "<group>";
+		};
+		EAAC19D625C1CC1A00E3A1F4 /* SecondScreenModels */ = {
+			isa = PBXGroup;
+			children = (
+				EAAC19D725C1CC3800E3A1F4 /* SecondScreenViewModel.swift */,
+			);
+			path = SecondScreenModels;
+			sourceTree = "<group>";
+		};
 		EAD8205D25C012C40062C7BF = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +243,7 @@
 		EAD820AA25C016B90062C7BF /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				EAAC19C325C1CACA00E3A1F4 /* SecondScreen */,
 				EA52191225C035AF00EF36F1 /* ScreenViewController */,
 			);
 			path = Screens;
@@ -234,6 +261,7 @@
 		EAD820AC25C016D80062C7BF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EAAC19D625C1CC1A00E3A1F4 /* SecondScreenModels */,
 				EAFBB1E725C08B1700B2A2AA /* ScreenModels */,
 				EA52192C25C04DE000EF36F1 /* ViewModel.swift */,
 			);
@@ -357,6 +385,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAAC19CD25C1CB0D00E3A1F4 /* SecondScreenViewController.storyboard in Resources */,
 				EAD8207625C012C60062C7BF /* LaunchScreen.storyboard in Resources */,
 				EA52191425C035D500EF36F1 /* ScreenViewController.storyboard in Resources */,
 				EAD8207325C012C60062C7BF /* Assets.xcassets in Resources */,
@@ -505,9 +534,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAAC19C525C1CAEF00E3A1F4 /* SecondScreenViewController.swift in Sources */,
 				EA52192D25C04DE000EF36F1 /* ViewModel.swift in Sources */,
 				EAD820AE25C0173E0062C7BF /* Coordinator.swift in Sources */,
 				EA52192825C04DD200EF36F1 /* ScreenVIewModel.swift in Sources */,
+				EAAC19D225C1CB1E00E3A1F4 /* SecondScreenCoordinator.swift in Sources */,
 				EAD8206E25C012C50062C7BF /* ViewController.swift in Sources */,
 				EA52191925C035F800EF36F1 /* ScreenViewController.swift in Sources */,
 				EA52190E25C02CF600EF36F1 /* StoryboardInstantiable.swift in Sources */,
@@ -515,6 +546,7 @@
 				EA52191E25C043B700EF36F1 /* SceneCoordinator.swift in Sources */,
 				EA52192325C044FD00EF36F1 /* ScreenCoordinator.swift in Sources */,
 				EAD8206C25C012C50062C7BF /* SceneDelegate.swift in Sources */,
+				EAAC19D825C1CC3800E3A1F4 /* SecondScreenViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

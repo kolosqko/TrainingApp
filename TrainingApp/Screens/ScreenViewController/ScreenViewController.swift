@@ -29,7 +29,7 @@ protocol ScreenDataProtocol {
 }
 
 protocol ScreenViewControllerDelegate: class {
-    func openRxSwiftButtonPressed()
+    func goToSecondScreen()
 }
 
 class ScreenViewController: UIViewController, StoryboardInstantiable {
@@ -43,8 +43,8 @@ class ScreenViewController: UIViewController, StoryboardInstantiable {
         viewModel?.inputs.secondButtonPressed()
     }
 
-    @IBAction func openRxSwiftButtonAction(_ sender: Any) {
-        delegate?.openRxSwiftButtonPressed()
+    @IBAction func goToSecondScreenButtonAction(_ sender: Any) {
+        delegate?.goToSecondScreen()
     }
 
     var viewModel: ScreenViewModelProtocol?

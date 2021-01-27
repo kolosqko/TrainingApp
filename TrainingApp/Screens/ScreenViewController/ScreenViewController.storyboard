@@ -39,11 +39,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5W-e0-CaB">
-                                <rect key="frame" x="115.5" y="430" width="183" height="36"/>
+                                <rect key="frame" x="116.5" y="430" width="181" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Open RxSwift screen"/>
+                                <state key="normal" title="Go to second screen"/>
                                 <connections>
-                                    <action selector="openRxSwiftButtonAction:" destination="ddg-Ro-HjV" eventType="touchUpInside" id="hKm-kP-nRz"/>
+                                    <action selector="goToSecondScreenButtonAction:" destination="ddg-Ro-HjV" eventType="touchUpInside" id="hKm-kP-nRz"/>
                                 </connections>
                             </button>
                         </subviews>

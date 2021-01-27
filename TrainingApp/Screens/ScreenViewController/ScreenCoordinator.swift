@@ -12,7 +12,7 @@ class ScreenCoordinator: Coordinator {
 
     let presenter: UINavigationController
     var screenViewController: UIViewController?
-    var rxSwiftCoordinator: RxSwiftCoordinator?
+    var secondScreenCoordinator: SecondScreenCoordinator?
 
     init(presenter: UINavigationController) {
         self.presenter = presenter
@@ -30,9 +30,9 @@ class ScreenCoordinator: Coordinator {
 }
 
 extension ScreenCoordinator: ScreenViewControllerDelegate {
-    func openRxSwiftButtonPressed() {
-        let rxSwiftCoordinator = RxSwiftCoordinator(presenter: presenter)
-        rxSwiftCoordinator.start()
-        self.rxSwiftCoordinator = rxSwiftCoordinator
+    func goToSecondScreen() {
+        let secondScreenCoordinator = SecondScreenCoordinator(presenter: presenter)
+        secondScreenCoordinator.start()
+        self.secondScreenCoordinator = secondScreenCoordinator
     }
 }
