@@ -25,10 +25,18 @@ class SecondScreenViewController: UIViewController, StoryboardInstantiable {
         super.viewDidLoad()
         self.navigationItem.title = "Second screen"
         tableView.dataSource = self
+        tableView.delegate = self
+        textField.becomeFirstResponder()
         registerTableViewCells()
+        setupSignal()
+    }
+
+    private var signal: Signal<String, Never>?
+    private var pipe = Signal<String, Never>.pipe()
+
+    private func setupSignal() {
         // reactive staff
         let textSignal = textField.reactive.continuousTextValues
-        outputLabel.reactive.text <~ textSignal
         let observer = Signal<String, Never>.Observer { [weak self] event in
             switch event {
             case .value(let text):
@@ -37,7 +45,9 @@ class SecondScreenViewController: UIViewController, StoryboardInstantiable {
                 print(event.description)
             }
         }
-        textSignal.observe(observer)
+        pipe.output = pipe.output.merge(with: textSignal)
+        pipe.output.observe(observer)
+        outputLabel.reactive.text <~ pipe.output
     }
 
     private func registerTableViewCells() {
@@ -54,7 +64,23 @@ extension SecondScreenViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SecondScreenTableViewCell", for: indexPath)
+        (cell as? SecondScreenTableViewCell)?.textLabel?.text = "Cell #\(indexPath.row)"
         cell.backgroundColor = indexPath.row % 2 == 1 ? UIColor.red : UIColor.blue
         return cell
+    }
+}
+
+extension SecondScreenViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let text = textField.text,
+              indexPath.row < text.count else {
+            return
+        }
+        var characters = text.map { $0 }
+        characters.remove(at: indexPath.row)
+        let resultText = characters.map { String($0) }.reduce("", +)
+        textField.text = resultText
+
+        pipe.input.send(value: resultText)
     }
 }
