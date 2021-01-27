@@ -3,6 +3,8 @@
 target 'TrainingApp' do
   use_frameworks!
   pod 'SwiftLint'
+  pod 'ReactiveSwift', '~> 6.1'
+  pod 'ReactiveCocoa', '~> 10.1'
 
   target 'TrainingAppTests' do
     inherit! :search_paths
