@@ -15,9 +15,43 @@
                     <view key="view" contentMode="scaleToFill" id="HUq-M8-IpV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0OL-MG-moJ">
+                                <rect key="frame" x="0.0" y="44" width="372" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9rL-3h-niU">
+                                <rect key="frame" x="0.0" y="78" width="414" height="784"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pgn-Cb-I6c">
+                                <rect key="frame" x="372" y="44" width="42" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="VW4-kC-ChB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Pgn-Cb-I6c" firstAttribute="top" secondItem="VW4-kC-ChB" secondAttribute="top" id="3bo-5s-Rcc"/>
+                            <constraint firstItem="Pgn-Cb-I6c" firstAttribute="leading" secondItem="0OL-MG-moJ" secondAttribute="trailing" id="7gC-bK-Byp"/>
+                            <constraint firstItem="0OL-MG-moJ" firstAttribute="leading" secondItem="VW4-kC-ChB" secondAttribute="leading" id="B1I-T1-ZAP"/>
+                            <constraint firstItem="VW4-kC-ChB" firstAttribute="bottom" secondItem="9rL-3h-niU" secondAttribute="bottom" id="ENG-FE-L9b"/>
+                            <constraint firstItem="VW4-kC-ChB" firstAttribute="trailing" secondItem="9rL-3h-niU" secondAttribute="trailing" id="IPq-dA-yxg"/>
+                            <constraint firstItem="9rL-3h-niU" firstAttribute="top" secondItem="0OL-MG-moJ" secondAttribute="bottom" id="OSV-yl-ZaU"/>
+                            <constraint firstItem="0OL-MG-moJ" firstAttribute="top" secondItem="VW4-kC-ChB" secondAttribute="top" id="Rzt-8O-ztS"/>
+                            <constraint firstItem="9rL-3h-niU" firstAttribute="leading" secondItem="VW4-kC-ChB" secondAttribute="leading" id="cIc-TI-Wgh"/>
+                            <constraint firstItem="9rL-3h-niU" firstAttribute="top" secondItem="Pgn-Cb-I6c" secondAttribute="bottom" id="cqU-SS-7sa"/>
+                            <constraint firstItem="VW4-kC-ChB" firstAttribute="trailing" secondItem="Pgn-Cb-I6c" secondAttribute="trailing" id="s0e-rD-anQ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="outputLabel" destination="Pgn-Cb-I6c" id="FPm-eQ-AmE"/>
+                        <outlet property="tableView" destination="9rL-3h-niU" id="nqn-cD-Yez"/>
+                        <outlet property="textField" destination="0OL-MG-moJ" id="Vce-ap-ufm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fco-8A-egI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
